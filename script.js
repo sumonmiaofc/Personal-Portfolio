@@ -20,9 +20,9 @@
    4. Dashboard → Account → API Keys → Copy PUBLIC KEY
    5. Replace the 3 values below
    ================================================================ */
-const EMAILJS_SERVICE_ID  = 'service_xxxxxxx';  // ← Your EmailJS Service ID
-const EMAILJS_TEMPLATE_ID = 'template_xxxxxxx'; // ← Your EmailJS Template ID
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';  // ← Your EmailJS Public Key
+const EMAILJS_SERVICE_ID  = 'service_20k2amt';  // ← Your EmailJS Service ID
+const EMAILJS_TEMPLATE_ID = 'template_6597yyz'; // ← Your EmailJS Template ID
+const EMAILJS_PUBLIC_KEY  = '30vU_S6c6c0gHx4lP';  // ← Your EmailJS Public Key
 
 /* ─── NAVBAR + SCROLL HANDLERS ─── */
 const navbar = document.getElementById('navbar');
