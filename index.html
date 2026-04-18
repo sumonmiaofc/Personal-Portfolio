@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MD Sumon Mia — Web Designer & Digital Marketing Specialist</title>
+  <meta name="description" content="MD Sumon Mia — Professional Web Designer & Digital Marketing Specialist based in Dhaka, Bangladesh. 4+ years of experience in WordPress, Shopify, Webflow, SEO & more."/>
+  <meta name="keywords" content="MD Sumon Mia, Web Designer, Digital Marketing, WordPress, Shopify, SEO, Dhaka Bangladesh"/>
+  <meta property="og:title" content="MD Sumon Mia — Web Designer & Digital Marketing Specialist"/>
+  <meta property="og:description" content="Premium web design & digital marketing services from Dhaka, Bangladesh. 4+ years of experience."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  NAVBAR                                  ║
+     ╚══════════════════════════════════════════╝ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">MD <span>Sumon</span> Mia</a>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-socials">
+        <a href="https://www.linkedin.com/in/sumonmiaofc/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://www.behance.net/sumonmiaofc" aria-label="Behance" title="Behance" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 11.5c1.38 0 2.5-1.12 2.5-2.5S8.88 6.5 7.5 6.5H3v5h4.5zM7.5 13H3v5.5h4.5c1.66 0 3-1.34 3-3s-1.34-2.5-3-2.5zM15 8a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 4.33-2.5H17a2.5 2.5 0 0 1-2 1c-1.16 0-2.13-.75-2.4-1.5H21v-1a5 5 0 0 0-5-5zm0 2c1.16 0 2.13.75 2.4 1.5H12.6c.27-.75 1.24-1.5 2.4-1.5zM9 6.5h5v1H9z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/sumonmiaofc/" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.facebook.com/mdsumonmiaofc/" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me ↗</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"      onclick="closeMob()">Home</a>
+  <a href="#about"     onclick="closeMob()">About</a>
+  <a href="#services"  onclick="closeMob()">Services</a>
+  <a href="#portfolio" onclick="closeMob()">Portfolio</a>
+  <a href="#contact"   onclick="closeMob()">Contact</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMob()">Hire Me ↗</a>
+  <div class="mob-socials">
+    <a href="https://www.linkedin.com/in/sumonmiaofc/" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+    <a href="https://www.behance.net/sumonmiaofc" aria-label="Behance" target="_blank" rel="noopener">Be</a>
+    <a href="https://www.instagram.com/sumonmiaofc/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+    <a href="https://www.facebook.com/mdsumonmiaofc/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+  </div>
+</div>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  HERO — Fixed 2-Column Grid Layout       ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="home">
+
+  <!-- Animated background layer -->
+  <div class="hero-bg">
+    <div class="hero-grid-bg"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- 2-column grid: content LEFT + visual RIGHT -->
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- LEFT: Text Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for new projects
+        </div>
+
+        <h1><span class="hero-name">MD Sumon Mia</span></h1>
+
+        <p class="hero-subtitle">
+          Web Designer &amp; <strong>Digital Marketing Specialist</strong>
+        </p>
+
+        <p class="hero-desc">
+          Crafting premium digital experiences that convert visitors into clients.
+          Based in Dhaka, Bangladesh — serving clients worldwide with 4+ years of
+          professional expertise.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">
+            Hire Me
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            View Portfolio
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">4<span class="sym">+</span></span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">150<span class="sym">+</span></span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">80<span class="sym">+</span></span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Visual / Floating Cards -->
+      <div class="hero-visual" aria-hidden="true">
+
+        <!-- Decorative rings -->
+        <div class="hero-ring"></div>
+
+        <!-- Orbiting dots -->
+        <div class="hero-orbit">
+          <div class="hero-orbit-dot"></div>
+        </div>
+        <div class="hero-orbit2">
+          <div class="hero-orbit2-dot"></div>
+        </div>
+
+        <!-- Center monogram -->
+        <div class="hero-center-mono">SM</div>
+
+        <!-- Floating service cards -->
+        <div class="hero-card-float hf1">
+          <div class="hf-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="hf-val">WordPress</div>
+          <div class="hf-lab">Website Design</div>
+        </div>
+
+        <div class="hero-card-float hf2">
+          <div class="hf-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+          </div>
+          <div class="hf-val">Shopify</div>
+          <div class="hf-lab">Store Design</div>
+        </div>
+
+        <div class="hero-card-float hf3">
+          <div class="hf-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <div class="hf-val">SEO</div>
+          <div class="hf-lab">Digital Marketing</div>
+        </div>
+
+        <div class="hero-card-float hf4">
+          <div class="hf-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <div class="hf-val">Webflow</div>
+          <div class="hf-lab">Website Design</div>
+        </div>
+
+      </div><!-- /hero-visual -->
+    </div><!-- /hero-inner -->
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  COUNTERS                                 ║
+     ╚══════════════════════════════════════════╝ -->
+<div class="counters-section">
+  <div class="container">
+    <div class="counters-grid">
+      <div class="counter-item reveal" data-delay="1">
+        <div class="counter-num"><span class="count-up" data-target="4">0</span><span class="sym">+</span></div>
+        <div class="counter-label">Years Experience</div>
+      </div>
+      <div class="counter-item reveal" data-delay="2">
+        <div class="counter-num"><span class="count-up" data-target="150">0</span><span class="sym">+</span></div>
+        <div class="counter-label">Projects Completed</div>
+      </div>
+      <div class="counter-item reveal" data-delay="3">
+        <div class="counter-num"><span class="count-up" data-target="80">0</span><span class="sym">+</span></div>
+        <div class="counter-label">Happy Clients</div>
+      </div>
+      <div class="counter-item reveal" data-delay="4">
+        <div class="counter-num"><span class="count-up" data-target="100">0</span><span class="sym">%</span></div>
+        <div class="counter-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  CLIENT LOGOS — Trusted Brands Marquee   ║
+     ╚══════════════════════════════════════════╝ -->
+<div class="logos-section">
+  <div class="logos-label">Trusted by Businesses Worldwide</div>
+  <div class="logos-track-wrap">
+    <div class="logos-track" id="logosTrack">
+
+      <!-- SET 1 -->
+      <!-- WordPress -->
+      <div class="logo-item" title="WordPress">
+        <svg viewBox="0 0 122.52 122.523" xmlns="http://www.w3.org/2000/svg"><path d="M8.708 61.26c0 20.802 12.089 38.779 29.619 47.298L13.258 37.963A52.96 52.96 0 0 0 8.708 61.26zM96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.331-5.161-7.995-5.161-12.326 0-4.832 3.664-9.328 8.825-9.328.233 0 .454.031.681.044-9.35-8.566-21.807-13.796-35.489-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.395.063 3.382.063 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.337 4.329 0 0-2.847.335-6.015.501l19.138 56.925 11.501-34.493-8.188-22.432c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.242-17.517c2.272-7.269 4.001-12.49 4.001-16.989zm-36.86 7.727l-15.757 45.801a53.025 53.025 0 0 0 14.924 2.142 53.18 53.18 0 0 0 17.397-2.906 4.717 4.717 0 0 1-.374-.724L59.88 66.335zM107.376 36.046a41.56 41.56 0 0 1 .354 5.43c0 5.328-1 11.325-4 18.824l-16.058 46.424C101.929 97.931 113.52 80.912 113.52 61.261a52.984 52.984 0 0 0-6.144-25.215zM61.262 0C27.483 0 0 27.483 0 61.26c0 33.778 27.483 61.263 61.262 61.263 33.778 0 61.265-27.485 61.265-61.263C122.527 27.483 95.04 0 61.262 0zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.23 26.222-58.451 58.453-58.451 32.229 0 58.45 26.221 58.45 58.451 0 32.232-26.221 58.455-58.45 58.455z"/></svg>
+      </div>
+      <!-- Shopify -->
+      <div class="logo-item" title="Shopify">
+        <svg viewBox="0 0 109.5 124.5" xmlns="http://www.w3.org/2000/svg"><path d="M95.42 23.61a1.1 1.1 0 0 0-1-.9c-.42 0-8.57-.17-8.57-.17s-6.84-6.67-7.49-7.34a2.07 2.07 0 0 0-1.84-.3l-2.54.79A27.4 27.4 0 0 0 71.88 11C69.46 4.08 65.06.2 59.91.2a3.79 3.79 0 0 0-1 .14C58.54.07 58.1 0 57.64 0c-4.1 0-7.35 3.07-9.43 7.68-1.44 3.24-2.53 7.3-2.84 10.44l-10.51 3.26a3.4 3.4 0 0 0-3.2 3.3C31.53 25.45 0 107.26 0 107.26l72.23 13.52 37.27-9.31S95.5 24.15 95.42 23.61zM67.95 16l-8.58 2.66c.28-3.42 1.07-6.83 2.29-9.68A20.33 20.33 0 0 1 65 6.69 28.77 28.77 0 0 1 67.95 16zm-9.2-14.38a7.82 7.82 0 0 1 1.72.35 22.09 22.09 0 0 0-3.43 3A26.53 26.53 0 0 0 51.5 16.7l-6.41 2A26.35 26.35 0 0 1 58.75 1.62zm1.25 53.72c0 .08-3.76-1.15-9.44-2.3.94-3.72 2.68-7.42 5.62-10.18a18.62 18.62 0 0 1 5-3.2c2.03 5.17 2.47 12.19-1.18 15.68zm-3.35-30.6a16.56 16.56 0 0 0-1.32.82A25.89 25.89 0 0 0 49 35.42a23.3 23.3 0 0 0-1.53 4.75c-2.87-.9-5.88-1.79-8.74-2.65A32.55 32.55 0 0 1 56.65 24.74zm-5.2-6.92c-.09.1-.17.2-.26.29a29.22 29.22 0 0 0-4.57 8.77L38.44 23.2c.62-1.09 1.43-2.07 2.39-2.38z"/></svg>
+      </div>
+      <!-- Google -->
+      <div class="logo-item" title="Google">
+        <svg viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg"><path d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"/><path d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"/><path d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"/><path d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"/></svg>
+      </div>
+      <!-- Amazon -->
+      <div class="logo-item" title="Amazon">
+        <svg viewBox="0 0 603.4 182" xmlns="http://www.w3.org/2000/svg"><path d="M373.8 141c-34.7 25.6-85 39.2-128.3 39.2-60.7 0-115.4-22.4-156.7-59.7-3.2-2.9-.4-6.9 3.6-4.6 44.6 26 99.7 41.6 156.7 41.6 38.4 0 80.7-8 119.6-24.5 5.8-2.5 10.8 3.9 5.1 8zm14.5-16.5c-4.5-5.7-29.5-2.7-40.7-1.4-3.4.4-3.9-2.6-.9-4.7 19.9-14 52.7-10 56.5-5.3 3.8 4.8-1 37.8-19.7 53.6-2.9 2.4-5.6 1.1-4.3-2 4.2-10.5 13.6-34.5 9.1-40.2z"/><path d="M349.4 12.8V4.7c0-1.2.9-2 2-2h35.4c1.2 0 2.1.9 2.1 2.1v7c0 1.2-1 2.7-2.8 5.1l-18.3 26.2c6.8-.2 14 .9 20.2 4.3 1.4.8 1.8 2 1.9 3.1v8.7c0 1.2-1.3 2.6-2.6 1.9-10.8-5.7-25.2-6.3-37.2.1-1.2.7-2.5-.7-2.5-1.9v-8.3c0-1.3 0-3.4 1.3-5.4l21.2-30.4h-18.5c-1.2 0-2.2-.9-2.2-2zm-131.7 52.5h-10.8c-1.1-.1-1.9-.9-2-2V5.1c0-1.2 1-2.2 2.2-2.2h10c1.1 0 2 .9 2.1 2v7.9h.2c2.6-7.6 7.5-11.2 14.1-11.2 6.7 0 10.9 3.6 13.9 11.2 2.6-7.6 8.6-11.2 14.9-11.2 4.5 0 9.5 1.9 12.5 6.1 3.4 4.7 2.7 11.4 2.7 17.4v35c0 1.2-1 2.2-2.2 2.2h-10.7c-1.1-.1-2-1-2-2.2V27.6c0-2.3.2-8.1-.3-10.3-.8-3.7-3-4.7-5.9-4.7-2.4 0-4.9 1.6-6 4.2-1 2.6-.9 6.8-.9 10.8v35.7c0 1.2-1 2.2-2.2 2.2h-10.7c-1.1-.1-2-1-2-2.2l-.1-35.7c0-7.5 1.2-18.5-6.1-18.5-7.5 0-7.2 10.8-7.2 18.5v35.5c0 1.2-1 2.2-2.5 2.2zm273.9-50c-7.6 0-8.1 10.4-8.1 16.9v3.5c0 6.5-.1 16.9 8.2 16.9 8.2 0 8.5-11.1 8.5-17.9 0-4.4-.2-9.8-1.6-14-1.2-3.7-3.5-5.4-7-5.4zm-.3-11.6c15.6 0 24 13.4 24 30.4 0 17.4-9.9 30.6-24 30.6-14.9 0-23-13.4-23-30 0-16.8 8.2-31 23-31zm44.3 61.7h-10.7c-1.1-.1-2-1-2-2.2V4.6c.1-1.1 1-1.9 2.1-1.9h10c.9 0 1.7.6 2 1.5v9.4h.2c3-8.2 7.1-12.2 14.4-12.2 4.7 0 9.4 1.7 12.3 6.4 2.7 4.4 2.7 11.8 2.7 17.1v38c-.1 1-.9 1.8-2 1.9h-10.8c-1-.1-1.8-.9-1.9-1.9V26.9c0-7.3 1.8-18.5-6.3-18.5-2.4 0-4.7 1.6-5.8 4.1-1.4 3.1-1.5 6.3-1.5 10.5v36.2c0 1.3-1 2.3-2.7 2.3zM281.1 36.8c0 5.1.1 9.4-2.5 13.9-2.1 3.7-5.4 5.9-9.1 5.9-5 0-7.9-3.8-7.9-9.5 0-11.1 10-13.2 19.5-13.2v2.9zm13.2 31.9c-.9.8-2.1.8-3.1.3-4.4-3.6-5.1-5.3-7.5-8.8-7.1 7.3-12.2 9.5-21.4 9.5-10.9 0-19.4-6.8-19.4-20.3 0-10.5 5.7-17.7 13.9-21.2 7.1-3.1 17-3.6 24.6-4.4v-1.7c0-3.1.2-6.8-1.6-9.5-1.5-2.5-4.5-3.5-7.1-3.5-4.8 0-9.1 2.5-10.2 7.6-.2 1.1-1 2.2-2.2 2.3l-10.4-1.1c-1.1-.2-2.3-1.1-2-2.8C252 1.1 267.7 0 281.8 0c7.3 0 16.9 1.9 22.6 7.4 7.3 6.9 6.6 16 6.6 26v23.5c0 7.1 2.9 10.2 5.7 14 1 1.4 1.2 3-.1 4l-22.3 18.8zm-183.5 0c-.9.8-2.1.8-3.1.3-4.4-3.6-5.1-5.3-7.5-8.8-7.1 7.3-12.2 9.5-21.4 9.5-10.9 0-19.4-6.8-19.4-20.3 0-10.5 5.7-17.7 13.9-21.2 7.1-3.1 17-3.6 24.6-4.4v-1.7c0-3.1.2-6.8-1.6-9.5-1.5-2.5-4.5-3.5-7.1-3.5-4.8 0-9.1 2.5-10.2 7.6-.2 1.1-1 2.2-2.2 2.3l-10.4-1.1c-1.1-.2-2.3-1.1-2-2.8C68.5 1.1 84.2 0 98.3 0c7.3 0 16.9 1.9 22.6 7.4 7.3 6.9 6.6 16 6.6 26v23.5c0 7.1 2.9 10.2 5.7 14 1 1.4 1.2 3-.1 4L110.8 93.1l-2.7-1zm-9.5-32c0 5.1.1 9.4-2.5 13.9-2.1 3.7-5.4 5.9-9.1 5.9-5 0-7.9-3.8-7.9-9.5 0-11.1 10-13.2 19.5-13.2v2.9z"/></svg>
+      </div>
+      <!-- Stripe -->
+      <div class="logo-item" title="Stripe">
+        <svg viewBox="0 0 468 222.5" xmlns="http://www.w3.org/2000/svg"><path d="M414 113.4c0-25.6-12.4-45.8-36.1-45.8-23.8 0-38.2 20.2-38.2 45.6 0 30.1 17 45.3 41.4 45.3 11.9 0 20.9-2.7 27.7-6.5v-20c-6.8 3.4-14.6 5.5-24.5 5.5-9.7 0-18.3-3.4-19.4-15.2h48.9c0-1.3.2-6.5.2-8.9zm-49.4-9.5c0-11.3 6.9-16 13.2-16 6.1 0 12.6 4.7 12.6 16h-25.8zM301.1 67.6c-9.8 0-16.1 4.6-19.6 7.8l-1.3-6.2h-22v116.6l25-5.3.1-28.3c3.6 2.6 8.9 6.3 17.7 6.3 17.9 0 34.2-14.4 34.2-46.1-.1-29-16.5-44.8-34.1-44.8zm-6 68.9c-5.9 0-9.4-2.1-11.8-4.7l-.1-37.1c2.6-2.9 6.2-4.9 11.9-4.9 9.1 0 15.4 10.2 15.4 23.3 0 13.4-6.2 23.4-15.4 23.4zM223.8 61.7l25.1-5.4V36l-25.1 5.3zM223.8 69h25.1v87.5h-25.1zM196.9 76.7l-1.6-7.7h-21.6v87.5h25V97.3c5.9-7.7 15.9-6.3 19-5.2V69c-3.2-1.2-14.9-3.4-20.8 7.7zM146.9 47.6l-24.4 5.2-.1 80.1c0 14.8 11.1 25.7 25.9 25.7 8.2 0 14.2-1.5 17.5-3.3V135c-3.2 1.3-19 5.9-19-8.9V90.6h19V69h-19l.1-21.4zM79.3 94.7c0-3.9 3.2-5.4 8.4-5.4 7.5 0 17 2.3 24.5 6.4V72.2c-8.2-3.2-16.3-4.6-24.5-4.6C67.5 67.6 54 78.2 54 95.9c0 27.6 38 23.2 38 35.1 0 4.6-4 6.1-9.6 6.1-8.3 0-18.9-3.4-27.3-8v23.8c9.3 4 18.7 5.7 27.3 5.7 20.8 0 35.1-10.3 35.1-28.2-.1-29.8-38.2-24.5-38.2-35.7z"/></svg>
+      </div>
+      <!-- Slack -->
+      <div class="logo-item" title="Slack">
+        <svg viewBox="0 0 127 127" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 80c0 7.3-5.9 13.2-13.2 13.2C6.7 93.2.8 87.3.8 80c0-7.3 5.9-13.2 13.2-13.2H27.2V80zm6.6 0c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2v33c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V80zM47 27.2c-7.3 0-13.2-5.9-13.2-13.2C33.8 6.7 39.7.8 47 .8c7.3 0 13.2 5.9 13.2 13.2V27.2H47zm0 6.6c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H13.9C6.6 60.2.7 54.3.7 47c0-7.3 5.9-13.2 13.2-13.2H47zM99.8 47c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H99.8V47zm-6.6 0c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V13.9C66.8 6.6 72.7.7 80 .7c7.3 0 13.2 5.9 13.2 13.2V47zM80 99.8c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V99.8H80zm0-6.6c-7.3 0-13.2-5.9-13.2-13.2 0-7.3 5.9-13.2 13.2-13.2h33.1c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H80z"/></svg>
+      </div>
+      <!-- Dropbox -->
+      <div class="logo-item" title="Dropbox">
+        <svg viewBox="0 0 43.1 40" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 0L0 8.3l9.3 7.4 12.8-7.6zm17.3 0l-12.8 8.1 12.8 7.6 9.3-7.4zM0 23.1l12.9 8.2L22.1 24l-12.8-7.4zm30.2 8.2L43.1 23.1l-9.3-7.4L21 24zm-8.1.9l-9.3 6.2v3.6L21.5 40l9.3-6.2v-3.6z"/></svg>
+      </div>
+      <!-- Figma -->
+      <div class="logo-item" title="Figma">
+        <svg viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z"/><path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z"/><path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg>
+      </div>
+      <!-- Webflow -->
+      <div class="logo-item" title="Webflow">
+        <svg viewBox="0 0 192 64" xmlns="http://www.w3.org/2000/svg"><path d="M139.5 0c-10.8 0-19.2 5.6-24.3 14.4C112.4 5.6 104.5 0 93.8 0c-6.6 0-12.4 2.4-16.8 6.3V0H57.2L44.9 40.3 34.5 0H15.8L5.4 40.3 0 0h0l5.4 64h21.8l10.5-39.4L48 64h21.8l10-46.7a15 15 0 0 1 14-10.4c8 0 13.2 5.3 13.2 13.8v43.2h18.9V53c3.3 7 9.8 11 18 11 14 0 24.5-11 24.5-25.5V0h-18.9zm0 48.7c-4.4 0-8-3.7-8-8.2V22.2c0-4.5 3.6-8.2 8-8.2s8 3.7 8 8.2v18.3c0 4.5-3.6 8.2-8 8.2z"/></svg>
+      </div>
+
+      <!-- SET 2 (duplicate for seamless loop) -->
+      <div class="logo-item" title="WordPress">
+        <svg viewBox="0 0 122.52 122.523" xmlns="http://www.w3.org/2000/svg"><path d="M8.708 61.26c0 20.802 12.089 38.779 29.619 47.298L13.258 37.963A52.96 52.96 0 0 0 8.708 61.26zM96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.331-5.161-7.995-5.161-12.326 0-4.832 3.664-9.328 8.825-9.328.233 0 .454.031.681.044-9.35-8.566-21.807-13.796-35.489-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.395.063 3.382.063 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.337 4.329 0 0-2.847.335-6.015.501l19.138 56.925 11.501-34.493-8.188-22.432c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.242-17.517c2.272-7.269 4.001-12.49 4.001-16.989zm-36.86 7.727l-15.757 45.801a53.025 53.025 0 0 0 14.924 2.142 53.18 53.18 0 0 0 17.397-2.906 4.717 4.717 0 0 1-.374-.724L59.88 66.335zM107.376 36.046a41.56 41.56 0 0 1 .354 5.43c0 5.328-1 11.325-4 18.824l-16.058 46.424C101.929 97.931 113.52 80.912 113.52 61.261a52.984 52.984 0 0 0-6.144-25.215zM61.262 0C27.483 0 0 27.483 0 61.26c0 33.778 27.483 61.263 61.262 61.263 33.778 0 61.265-27.485 61.265-61.263C122.527 27.483 95.04 0 61.262 0zm0 119.715c-32.23 0-58.453-26.223-58.453-58.455 0-32.23 26.222-58.451 58.453-58.451 32.229 0 58.45 26.221 58.45 58.451 0 32.232-26.221 58.455-58.45 58.455z"/></svg>
+      </div>
+      <div class="logo-item" title="Shopify">
+        <svg viewBox="0 0 109.5 124.5" xmlns="http://www.w3.org/2000/svg"><path d="M95.42 23.61a1.1 1.1 0 0 0-1-.9c-.42 0-8.57-.17-8.57-.17s-6.84-6.67-7.49-7.34a2.07 2.07 0 0 0-1.84-.3l-2.54.79A27.4 27.4 0 0 0 71.88 11C69.46 4.08 65.06.2 59.91.2a3.79 3.79 0 0 0-1 .14C58.54.07 58.1 0 57.64 0c-4.1 0-7.35 3.07-9.43 7.68-1.44 3.24-2.53 7.3-2.84 10.44l-10.51 3.26a3.4 3.4 0 0 0-3.2 3.3C31.53 25.45 0 107.26 0 107.26l72.23 13.52 37.27-9.31S95.5 24.15 95.42 23.61z"/></svg>
+      </div>
+      <div class="logo-item" title="Google">
+        <svg viewBox="0 0 533.5 544.3" xmlns="http://www.w3.org/2000/svg"><path d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"/><path d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"/><path d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"/><path d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"/></svg>
+      </div>
+      <div class="logo-item" title="Amazon">
+        <svg viewBox="0 0 603.4 182" xmlns="http://www.w3.org/2000/svg"><path d="M373.8 141c-34.7 25.6-85 39.2-128.3 39.2-60.7 0-115.4-22.4-156.7-59.7-3.2-2.9-.4-6.9 3.6-4.6 44.6 26 99.7 41.6 156.7 41.6 38.4 0 80.7-8 119.6-24.5 5.8-2.5 10.8 3.9 5.1 8zm14.5-16.5c-4.5-5.7-29.5-2.7-40.7-1.4-3.4.4-3.9-2.6-.9-4.7 19.9-14 52.7-10 56.5-5.3 3.8 4.8-1 37.8-19.7 53.6-2.9 2.4-5.6 1.1-4.3-2 4.2-10.5 13.6-34.5 9.1-40.2z"/></svg>
+      </div>
+      <div class="logo-item" title="Stripe">
+        <svg viewBox="0 0 468 222.5" xmlns="http://www.w3.org/2000/svg"><path d="M414 113.4c0-25.6-12.4-45.8-36.1-45.8-23.8 0-38.2 20.2-38.2 45.6 0 30.1 17 45.3 41.4 45.3 11.9 0 20.9-2.7 27.7-6.5v-20c-6.8 3.4-14.6 5.5-24.5 5.5-9.7 0-18.3-3.4-19.4-15.2h48.9c0-1.3.2-6.5.2-8.9zm-49.4-9.5c0-11.3 6.9-16 13.2-16 6.1 0 12.6 4.7 12.6 16h-25.8z"/></svg>
+      </div>
+      <div class="logo-item" title="Slack">
+        <svg viewBox="0 0 127 127" xmlns="http://www.w3.org/2000/svg"><path d="M27.2 80c0 7.3-5.9 13.2-13.2 13.2C6.7 93.2.8 87.3.8 80c0-7.3 5.9-13.2 13.2-13.2H27.2V80zm6.6 0c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2v33c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V80zM47 27.2c-7.3 0-13.2-5.9-13.2-13.2C33.8 6.7 39.7.8 47 .8c7.3 0 13.2 5.9 13.2 13.2V27.2H47zm0 6.6c7.3 0 13.2 5.9 13.2 13.2 0 7.3-5.9 13.2-13.2 13.2H13.9C6.6 60.2.7 54.3.7 47c0-7.3 5.9-13.2 13.2-13.2H47z"/></svg>
+      </div>
+      <div class="logo-item" title="Dropbox">
+        <svg viewBox="0 0 43.1 40" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 0L0 8.3l9.3 7.4 12.8-7.6zm17.3 0l-12.8 8.1 12.8 7.6 9.3-7.4zM0 23.1l12.9 8.2L22.1 24l-12.8-7.4zm30.2 8.2L43.1 23.1l-9.3-7.4L21 24zm-8.1.9l-9.3 6.2v3.6L21.5 40l9.3-6.2v-3.6z"/></svg>
+      </div>
+      <div class="logo-item" title="Figma">
+        <svg viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z"/><path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z"/><path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg>
+      </div>
+      <div class="logo-item" title="Webflow">
+        <svg viewBox="0 0 192 64" xmlns="http://www.w3.org/2000/svg"><path d="M139.5 0c-10.8 0-19.2 5.6-24.3 14.4C112.4 5.6 104.5 0 93.8 0c-6.6 0-12.4 2.4-16.8 6.3V0H57.2L44.9 40.3 34.5 0H15.8L5.4 40.3 0 0h0l5.4 64h21.8l10.5-39.4L48 64h21.8l10-46.7a15 15 0 0 1 14-10.4c8 0 13.2 5.3 13.2 13.8v43.2h18.9V53c3.3 7 9.8 11 18 11 14 0 24.5-11 24.5-25.5V0h-18.9zm0 48.7c-4.4 0-8-3.7-8-8.2V22.2c0-4.5 3.6-8.2 8-8.2s8 3.7 8 8.2v18.3c0 4.5-3.6 8.2-8 8.2z"/></svg>
+      </div>
+
+    </div><!-- /logos-track -->
+  </div><!-- /logos-track-wrap -->
+</div>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  SERVICES PREVIEW (Homepage)              ║
+     ╚══════════════════════════════════════════╝ -->
+<section class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="section-label reveal">What I Do</div>
+    <h2 class="section-title reveal">Premium Digital Services</h2>
+    <p class="section-sub reveal">From stunning website design to powerful digital marketing strategies — everything you need to grow your online presence.</p>
+    <div class="services-preview-grid">
+      <div class="srv-prev-card reveal" data-delay="1" onclick="setService('WordPress Website Design')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <h3>WordPress Design</h3>
+        <p>Custom, fast-loading WordPress websites optimized for conversion and SEO performance.</p>
+      </div>
+      <div class="srv-prev-card reveal" data-delay="2" onclick="setService('Shopify Store Design')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h3>Shopify Store Design</h3>
+        <p>High-converting Shopify stores built to scale — beautiful, fast, and optimized for sales.</p>
+      </div>
+      <div class="srv-prev-card reveal" data-delay="3" onclick="setService('SEO Services')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>SEO Services</h3>
+        <p>Data-driven SEO strategies that boost rankings, drive organic traffic, and grow revenue.</p>
+      </div>
+      <div class="srv-prev-card reveal" data-delay="4" onclick="setService('Webflow Website Design')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Webflow Design</h3>
+        <p>Pixel-perfect, no-code Webflow sites with advanced animations and CMS integration.</p>
+      </div>
+      <div class="srv-prev-card reveal" data-delay="3" onclick="setService('Social Media Marketing')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></div>
+        <h3>Social Media Marketing</h3>
+        <p>Strategic social media campaigns that build brand awareness and drive real engagement.</p>
+      </div>
+      <div class="srv-prev-card reveal" data-delay="4" onclick="setService('Graphics Design')">
+        <div class="srv-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></div>
+        <h3>Graphics Design</h3>
+        <p>Compelling visual identities, logos, and creative assets that make your brand unforgettable.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px" class="reveal">
+      <a href="#services" class="btn btn-outline">View All Services
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  WHY CHOOSE ME                            ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="reveal-left">
+        <div class="section-label">Why Me</div>
+        <h2 class="section-title">Why Clients Choose<br><span style="color:var(--green)">MD Sumon Mia</span></h2>
+        <p style="margin-bottom:32px;max-width:440px">With 4+ years of hands-on experience delivering premium digital solutions, I bring a client-first approach that prioritizes results, communication, and quality above all else.</p>
+        <a href="#contact" class="btn btn-primary">Start a Project
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+      <div class="why-features reveal-right">
+        <div class="why-feat" data-delay="1">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h4>Result-Driven Approach</h4>
+          <p>Every project is built to achieve measurable business outcomes, not just look good.</p>
+        </div>
+        <div class="why-feat" data-delay="2">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h4>On-Time Delivery</h4>
+          <p>Strict timelines and milestones ensure your project is delivered when promised.</p>
+        </div>
+        <div class="why-feat" data-delay="3">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h4>Clear Communication</h4>
+          <p>Regular updates and transparent communication throughout the project lifecycle.</p>
+        </div>
+        <div class="why-feat" data-delay="4">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h4>Premium Quality</h4>
+          <p>Pixel-perfect execution with attention to every detail for a polished final product.</p>
+        </div>
+        <div class="why-feat" data-delay="3">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h4>Custom Solutions</h4>
+          <p>No templates or cookie-cutter designs — everything is built uniquely for your brand.</p>
+        </div>
+        <div class="why-feat" data-delay="4">
+          <div class="why-feat-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h4>Post-Launch Support</h4>
+          <p>Dedicated support after project delivery to ensure everything runs smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  TESTIMONIALS                             ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <div class="section-label reveal" style="justify-content:center">Testimonials</div>
+      <h2 class="reveal">What Clients Say</h2>
+      <p class="reveal" style="margin:12px auto 0;max-width:460px">Real feedback from real clients who trusted me with their digital projects.</p>
+    </div>
+    <div class="testi-slider reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testi-text">Sumon delivered an absolutely stunning WordPress website for our business. The design exceeded all expectations — modern, fast, and perfectly optimized. Highly recommend!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JM</div>
+            <div><div class="testi-name">James Mitchell</div><div class="testi-role">CEO, TechVision Ltd · UK</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testi-text">Our Shopify store was transformed completely. Sales increased by 40% within the first month after launch. Sumon's expertise in conversion design is unmatched.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SC</div>
+            <div><div class="testi-name">Sarah Chen</div><div class="testi-role">Founder, Bloom Fashion · Australia</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testi-text">The SEO campaign Sumon ran for us was exceptional. We went from page 4 to page 1 for our target keywords within 3 months. Incredible ROI on the investment.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RK</div>
+            <div><div class="testi-name">Ravi Kumar</div><div class="testi-role">Director, DigiGrowth · India</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="testi-text">Professional, responsive, and incredibly talented. Sumon's Webflow design for our agency website is the best investment we've made this year. 10/10 recommend!</p>
+          <div class="testi-author">
+            <div class="testi-avatar">EP</div>
+            <div><div class="testi-name">Emily Parker</div><div class="testi-role">Creative Director, PixelBox · USA</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav" id="testiNav">
+      <div class="testi-dot active" onclick="goToSlide(0)"></div>
+      <div class="testi-dot" onclick="goToSlide(1)"></div>
+      <div class="testi-dot" onclick="goToSlide(2)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section" style="background:var(--bg2)">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div style="position:relative;z-index:1">
+        <div class="section-label" style="justify-content:center;margin-bottom:16px">Ready to Start?</div>
+        <h2>Let's Build Something<br><span style="color:var(--green)">Extraordinary Together</span></h2>
+        <p>Turn your vision into a high-converting digital experience. Let's discuss your project today — no obligation, just ideas.</p>
+        <div class="cta-btns">
+          <a href="#contact" class="btn btn-primary">Get a Free Quote
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="https://wa.me/8801823259348" class="btn btn-outline" target="_blank">WhatsApp Me
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.849L0 24l6.362-1.501A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.857 9.857 0 0 1-5.044-1.383l-.361-.215-3.779.891.907-3.676-.236-.375A9.855 9.855 0 0 1 2.106 12C2.106 6.523 6.524 2.106 12 2.106S21.894 6.523 21.894 12 17.477 21.894 12 21.894z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  ABOUT                                    ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <div class="about-monogram">SM</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <span class="num">4+</span>
+          <span class="txt">Years Experience</span>
+        </div>
+      </div>
+      <div class="about-info reveal-right">
+        <div class="section-label">About Me</div>
+        <h2>Passionate Digital<br>Creative from <span style="color:var(--green)">Dhaka</span></h2>
+        <p class="about-text">Hello! I'm <strong style="color:var(--text)">MD Sumon Mia</strong>, a professional Web Designer and Digital Marketing Specialist based in Dhaka, Bangladesh. With over 4 years of hands-on experience, I help businesses of all sizes build powerful online presences that generate real results.</p>
+        <p class="about-text">I specialize in creating visually stunning, conversion-optimized websites using platforms like WordPress, Shopify, Webflow, Framer, and Wix — paired with data-driven digital marketing strategies that drive measurable growth.</p>
+
+        <div>
+          <h4 style="font-family:var(--font-head);font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text3);margin-bottom:16px">Core Skills</h4>
+          <div class="skills-wrap">
+            <div class="skill-bar"><div class="skill-top"><span>WordPress Design</span><span>95%</span></div><div class="skill-track"><div class="skill-fill" data-width="95"></div></div></div>
+            <div class="skill-bar"><div class="skill-top"><span>Shopify Development</span><span>90%</span></div><div class="skill-track"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-bar"><div class="skill-top"><span>SEO & Digital Marketing</span><span>88%</span></div><div class="skill-track"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-bar"><div class="skill-top"><span>Webflow / Framer</span><span>85%</span></div><div class="skill-track"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-bar"><div class="skill-top"><span>Graphics Design</span><span>82%</span></div><div class="skill-track"><div class="skill-fill" data-width="82"></div></div></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-family:var(--font-head);font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text3);margin-bottom:14px">Tools & Platforms</h4>
+          <div class="tools-wrap">
+            <span class="tool-pill">WordPress</span><span class="tool-pill">Shopify</span><span class="tool-pill">Webflow</span>
+            <span class="tool-pill">Framer</span><span class="tool-pill">Wix</span><span class="tool-pill">Figma</span>
+            <span class="tool-pill">Adobe XD</span><span class="tool-pill">Photoshop</span><span class="tool-pill">Illustrator</span>
+            <span class="tool-pill">Google Analytics</span><span class="tool-pill">SEMrush</span><span class="tool-pill">Ahrefs</span>
+            <span class="tool-pill">Meta Ads</span><span class="tool-pill">Google Ads</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary" style="align-self:flex-start">Let's Work Together
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  SERVICES                                 ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label reveal" style="justify-content:center">Services</div>
+      <h2 class="reveal">What I Offer</h2>
+      <p class="section-sub reveal">Comprehensive digital services tailored to your unique business needs — from stunning web design to full-scale digital marketing campaigns.</p>
+    </div>
+
+    <div class="srv-category-title reveal">🌐 Website Design Services</div>
+    <div class="services-grid">
+      <div class="srv-card reveal" data-delay="1">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+        <h3>WordPress Website Design</h3>
+        <p>Custom, responsive WordPress websites optimized for speed, SEO, and conversion from day one.</p>
+        <ul class="srv-feats"><li>Custom theme design & development</li><li>Mobile-first responsive layout</li><li>WooCommerce integration</li><li>Speed & performance optimization</li><li>SEO-friendly structure</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('WordPress Website Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="2">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h3>Shopify Store Design</h3>
+        <p>High-converting Shopify stores built for scale, with seamless UX and powerful conversion funnels.</p>
+        <ul class="srv-feats"><li>Custom Shopify theme design</li><li>Product page optimization</li><li>Cart & checkout customization</li><li>App integration & setup</li><li>Conversion rate optimization</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Shopify Store Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="3">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h3>Webflow Website Design</h3>
+        <p>Pixel-perfect Webflow websites with advanced animations, CMS, and no-code flexibility.</p>
+        <ul class="srv-feats"><li>Custom Webflow design & build</li><li>CMS collection setup</li><li>Advanced scroll animations</li><li>Client editor handoff</li><li>Webflow hosting setup</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Webflow Website Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="1">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Framer Website Design</h3>
+        <p>Cutting-edge Framer sites with stunning micro-interactions and modern design systems.</p>
+        <ul class="srv-feats"><li>Custom Framer design & publish</li><li>Interactive component design</li><li>Motion & micro-interactions</li><li>Responsive breakpoints</li><li>CMS & dynamic content</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Framer Website Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="2">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>Wix Website Design</h3>
+        <p>Beautiful Wix websites with advanced Velo functionality and seamless business integrations.</p>
+        <ul class="srv-feats"><li>Custom Wix design</li><li>Wix Velo development</li><li>Booking & scheduling setup</li><li>E-commerce integration</li><li>SEO & performance setup</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Wix Website Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+    </div>
+
+    <div class="srv-category-title reveal" style="margin-top:32px">📈 Digital Marketing Services</div>
+    <div class="services-grid">
+      <div class="srv-card reveal" data-delay="1">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>SEO Services</h3>
+        <p>Comprehensive SEO audits, on-page optimization, and link-building strategies to dominate search results.</p>
+        <ul class="srv-feats"><li>Technical SEO audit</li><li>On-page & off-page optimization</li><li>Keyword research & strategy</li><li>Quality link building</li><li>Monthly performance reports</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('SEO Services');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="2">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></div>
+        <h3>Social Media Marketing</h3>
+        <p>Strategic social media management and paid advertising campaigns that build community and drive growth.</p>
+        <ul class="srv-feats"><li>Social media strategy & planning</li><li>Content creation & scheduling</li><li>Meta & Instagram ads management</li><li>Community management</li><li>Analytics & ROI reporting</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Social Media Marketing');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+      <div class="srv-card reveal" data-delay="3">
+        <div class="srv-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></div>
+        <h3>Graphics Design</h3>
+        <p>Professional brand identity, creative assets, and visual designs that make your brand stand out.</p>
+        <ul class="srv-feats"><li>Logo & brand identity design</li><li>Social media graphics</li><li>Marketing materials & print</li><li>UI/UX design & prototyping</li><li>Presentation design</li></ul>
+        <button class="btn btn-outline btn-sm" onclick="setService('Graphics Design');document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Service →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  PORTFOLIO                                ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="section-label reveal" style="justify-content:center">Portfolio</div>
+      <h2 class="reveal">Recent Projects</h2>
+      <p class="reveal" style="margin:12px auto 0;max-width:460px">A selection of projects I've delivered — each crafted with purpose, precision, and a relentless focus on results.</p>
+    </div>
+    <div class="port-filters reveal" id="portFilters">
+      <button class="port-filter active" data-filter="all">All Projects</button>
+      <button class="port-filter" data-filter="wordpress">WordPress</button>
+      <button class="port-filter" data-filter="shopify">Shopify</button>
+      <button class="port-filter" data-filter="webflow">Webflow</button>
+      <button class="port-filter" data-filter="seo">SEO</button>
+      <button class="port-filter" data-filter="social">Social Media</button>
+    </div>
+    <div class="port-grid" id="portGrid">
+      <div class="port-card reveal" data-delay="1" data-cat="wordpress" onclick="openModal('BizFlow Pro','A full-featured business WordPress website for a B2B SaaS company. Built with custom Gutenberg blocks, WooCommerce integration, and a fully animated UI that increased conversion rate by 62%.','WordPress, Elementor, WooCommerce, Custom CSS','SaaS Company · UK','6 Weeks','3x Conversion Increase')">
+        <div class="port-img"><div class="port-img-label">BP</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>BizFlow Pro</h3><p>B2B SaaS landing page with advanced animations & CRO</p><div class="port-tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">CRO</span></div></div>
+      </div>
+      <div class="port-card reveal" data-delay="2" data-cat="shopify" onclick="openModal('LuxeLooks Store','Premium Shopify fashion store designed for a UK-based clothing brand. Custom product pages, advanced filtering, and a streamlined checkout flow that drove a 40% increase in sales month over month.','Shopify, Liquid, Custom CSS, Meta Pixel','Fashion Brand · UK','4 Weeks','40% Sales Increase')">
+        <div class="port-img"><div class="port-img-label">LL</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>LuxeLooks Store</h3><p>Premium Shopify fashion store with CRO-focused design</p><div class="port-tags"><span class="tag">Shopify</span><span class="tag">E-commerce</span><span class="tag">Fashion</span></div></div>
+      </div>
+      <div class="port-card reveal" data-delay="3" data-cat="webflow" onclick="openModal('Nexus Agency Site','Modern agency portfolio built entirely in Webflow with scroll-triggered animations, custom cursor effects, and a comprehensive CMS. Achieved a perfect Lighthouse score.','Webflow, CMS, Custom JS, GSAP Animations','Digital Agency · USA','5 Weeks','100 Lighthouse Score')">
+        <div class="port-img"><div class="port-img-label">NX</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>Nexus Agency</h3><p>Award-worthy Webflow portfolio with advanced motion design</p><div class="port-tags"><span class="tag">Webflow</span><span class="tag">Animation</span><span class="tag">CMS</span></div></div>
+      </div>
+      <div class="port-card reveal" data-delay="1" data-cat="seo" onclick="openModal('TechVision SEO Campaign','12-month SEO campaign for a UK tech company. Took 45 target keywords from page 4 to page 1, increased organic traffic by 280%, and generated 3x more qualified leads per month.','Technical SEO, Content Strategy, Link Building, GSC, SEMrush','Tech Company · UK','12 Months','280% Traffic Growth')">
+        <div class="port-img"><div class="port-img-label">TV</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>TechVision SEO</h3><p>Full SEO campaign with 280% organic traffic growth in 12 months</p><div class="port-tags"><span class="tag">SEO</span><span class="tag">Content</span><span class="tag">Link Building</span></div></div>
+      </div>
+      <div class="port-card reveal" data-delay="2" data-cat="social" onclick="openModal('Bloom Social Strategy','6-month social media marketing campaign for a beauty brand. Grew Instagram following from 2K to 28K, achieved 4.5% avg. engagement rate, and drove $85K in direct social sales.','Instagram, Facebook Ads, Content Creation, Reels Strategy, Analytics','Beauty Brand · Australia','6 Months','1,300% Follower Growth')">
+        <div class="port-img"><div class="port-img-label">BL</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>Bloom Social Campaign</h3><p>Instagram growth from 2K→28K with 1,300% follower increase</p><div class="port-tags"><span class="tag">Social Media</span><span class="tag">Instagram</span><span class="tag">Paid Ads</span></div></div>
+      </div>
+      <div class="port-card reveal" data-delay="3" data-cat="wordpress" onclick="openModal('MediCare Health Portal','HIPAA-compliant WordPress health portal with patient booking, telemedicine integration, and a custom dashboard. Fully secured and optimized for accessibility standards.','WordPress, Custom Plugin Dev, WooCommerce, REST API','Healthcare Group · Canada','8 Weeks','WCAG 2.1 Compliant')">
+        <div class="port-img"><div class="port-img-label">MC</div><div class="port-overlay"><div class="port-overlay-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div></div></div>
+        <div class="port-info"><h3>MediCare Portal</h3><p>Healthcare WordPress portal with booking & telemedicine integration</p><div class="port-tags"><span class="tag">WordPress</span><span class="tag">Healthcare</span><span class="tag">API</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" onclick="closeModal(null,true)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-img"><div class="modal-img-label" id="modalLabel">P</div></div>
+    <div class="modal-body">
+      <h2 id="modalTitle">Project Title</h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p id="modalDesc">Description</p>
+      <div class="port-tags" id="modalTags" style="margin-bottom:24px"></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn btn-primary btn-sm" onclick="closeModal(null,true);setTimeout(()=>{document.getElementById('contact').scrollIntoView({behavior:'smooth'})},300)">Request Similar Project →</button>
+        <button class="btn btn-outline btn-sm" onclick="closeModal(null,true)">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  FAQ                                      ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:52px">
+      <div class="section-label reveal" style="justify-content:center">FAQ</div>
+      <h2 class="reveal">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal" data-delay="1">
+        <div class="faq-q" onclick="toggleFaq(this)">How long does a typical website project take?<div class="faq-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Project timelines depend on complexity. A standard WordPress or Shopify website typically takes 2–4 weeks. Larger, more complex projects can take 6–8 weeks. I'll provide a detailed timeline during our discovery call so you know exactly what to expect.</div></div>
+      </div>
+      <div class="faq-item reveal" data-delay="2">
+        <div class="faq-q" onclick="toggleFaq(this)">What information do I need to provide to get started?<div class="faq-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><div class="faq-a-inner">To kick things off, I'll need your business details, brand assets (logo, colors, fonts if available), content (or I can help with that), reference websites you like, and your project goals. We'll cover all of this in our initial consultation.</div></div>
+      </div>
+      <div class="faq-item reveal" data-delay="3">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you offer revisions?<div class="faq-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes, absolutely. Every project includes multiple rounds of revisions to ensure you're 100% satisfied with the result. I work closely with clients at every stage — from wireframes to final delivery — to make sure nothing gets missed.</div></div>
+      </div>
+      <div class="faq-item reveal" data-delay="1">
+        <div class="faq-q" onclick="toggleFaq(this)">How much does a website design cost?<div class="faq-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Pricing varies based on the platform, scope, and complexity of your project. I offer packages to fit different budgets — from starter websites to enterprise-level builds. Contact me for a custom quote tailored to your specific needs.</div></div>
+      </div>
+      <div class="faq-item reveal" data-delay="2">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you provide post-launch support?<div class="faq-arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! I provide 30 days of post-launch support for all website projects to handle any bugs, tweaks, or questions. I also offer ongoing maintenance and support retainers for clients who need regular updates.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  CONTACT                                  ║
+     ╚══════════════════════════════════════════╝ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div style="margin-bottom:60px">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="reveal">Let's Work Together</h2>
+      <p class="reveal" style="max-width:520px">Ready to take your digital presence to the next level? Fill in the form below or reach out directly — I'll get back to you within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-card">
+          <div class="contact-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="contact-card-text"><strong>Email Address</strong><span>sumonmiaofc@gmail.com</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.18 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="contact-card-text"><strong>WhatsApp / Phone</strong><span>+880 1823-259348</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="contact-card-text"><strong>Location</strong><span>Dhaka, Bangladesh</span></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="contact-card-text"><strong>Response Time</strong><span>Within 24 hours</span></div>
+        </div>
+        <div style="padding:20px;background:var(--bg3);border:1px solid var(--glass-border);border-radius:var(--radius-sm)">
+          <p style="font-size:.84rem;color:var(--text2);margin-bottom:14px">Connect on Social Media</p>
+          <div style="display:flex;gap:12px">
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:10px;padding:10px" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:10px;padding:10px" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="btn btn-outline btn-sm" style="border-radius:10px;padding:10px" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <h3 style="font-size:1.2rem;margin-bottom:28px;color:var(--text)">Send Me a Message</h3>
+        <!-- Error banner -->
+        <div id="formErrBanner" class="form-err-banner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>Something went wrong. Please try again or contact via WhatsApp.</span>
+        </div>
+
+        <!-- Success message -->
+        <div id="successMsg" class="success-msg">
+          <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4>Message Sent Successfully!</h4>
+          <p>Thank you for reaching out, I'll review your project details and get back to you within 24 hours.</p>
+          <a href="https://wa.me/8801823259348" class="btn btn-outline btn-sm" target="_blank" style="margin-top:8px">
+            Chat on WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.849L0 24l6.362-1.501A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.857 9.857 0 0 1-5.044-1.383l-.361-.215-3.779.891.907-3.676-.236-.375A9.855 9.855 0 0 1 2.106 12C2.106 6.523 6.524 2.106 12 2.106S21.894 6.523 21.894 12 17.477 21.894 12 21.894z"/></svg>
+          </a>
+        </div>
+        <form id="contactForm" onsubmit="submitForm(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" placeholder="John Smith" autocomplete="name"/>
+              <span class="form-msg" id="fnameErr">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" placeholder="john@example.com" autocomplete="email"/>
+              <span class="form-msg" id="femailErr">Please enter a valid email address.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fphone">WhatsApp / Phone</label>
+            <input type="tel" id="fphone" placeholder="+1 234 567 8900" autocomplete="tel"/>
+          </div>
+          <div class="form-group">
+            <label for="fservice">Select Service *</label>
+            <select id="fservice">
+              <option value="">Choose a service...</option>
+              <option value="WordPress Website Design">WordPress Website Design</option>
+              <option value="Shopify Store Design">Shopify Store Design</option>
+              <option value="Webflow Website Design">Webflow Website Design</option>
+              <option value="Framer Website Design">Framer Website Design</option>
+              <option value="Wix Website Design">Wix Website Design</option>
+              <option value="SEO Services">SEO Services</option>
+              <option value="Social Media Marketing">Social Media Marketing</option>
+              <option value="Graphics Design">Graphics Design</option>
+            </select>
+            <span class="form-msg" id="fserviceErr">Please select a service.</span>
+          </div>
+          <div class="form-group">
+            <label for="fdetails">Project Details *</label>
+            <textarea id="fdetails" placeholder="Tell me about your project — goals, timeline, specific requirements..."></textarea>
+            <span class="form-msg" id="fdetailsErr">Please describe your project.</span>
+          </div>
+          <div class="form-group">
+            <label for="fbudget">Budget (Optional)</label>
+            <input type="text" id="fbudget" placeholder="e.g. $500 – $1000"/>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px" id="submitBtn">
+            Send Message
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════════════════════════════════╗
+     ║  FOOTER                                   ║
+     ╚══════════════════════════════════════════╝ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" style="font-size:1.4rem">MD <span>Sumon</span> Mia</a>
+        <p>Web Designer & Digital Marketing Specialist based in Dhaka, Bangladesh. Helping businesses grow their digital presence since 2020.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/sumonmiaofc/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.behance.net/sumonmiaofc" aria-label="Behance" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 11.5c1.38 0 2.5-1.12 2.5-2.5S8.88 6.5 7.5 6.5H3v5h4.5zM7.5 13H3v5.5h4.5c1.66 0 3-1.34 3-3s-1.34-2.5-3-2.5z"/><path d="M15 8a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 4.33-2.5H17a2.5 2.5 0 0 1-2 1c-1.16 0-2.13-.75-2.4-1.5H21v-1a5 5 0 0 0-5-5zm0 2c1.16 0 2.13.75 2.4 1.5H12.6c.27-.75 1.24-1.5 2.4-1.5z"/><path d="M9 6.5h5v1H9z"/></svg></a>
+          <a href="https://www.instagram.com/sumonmiaofc/" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.facebook.com/mdsumonmiaofc/" aria-label="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">WordPress Design</a></li>
+          <li><a href="#services">Shopify Store</a></li>
+          <li><a href="#services">Webflow Design</a></li>
+          <li><a href="#services">SEO Services</a></li>
+          <li><a href="#services">Social Media</a></li>
+          <li><a href="#services">Graphics Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:sumonmiaofc@gmail.com">sumonmiaofc@gmail.com</a></li>
+          <li><a href="https://wa.me/8801823259348" target="_blank">WhatsApp</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 <span>MD Sumon Mia</span>. All rights reserved. · Dhaka, Bangladesh</p>
+      <p>Crafted with <span>♥</span> for results-driven clients worldwide</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── FLOATING WHATSAPP ─── -->
+<a href="https://wa.me/8801823259348" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.849L0 24l6.362-1.501A11.936 11.936 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.857 9.857 0 0 1-5.044-1.383l-.361-.215-3.779.891.907-3.676-.236-.375A9.855 9.855 0 0 1 2.106 12C2.106 6.523 6.524 2.106 12 2.106S21.894 6.523 21.894 12 17.477 21.894 12 21.894z"/>
+  </svg>
+</a>
+
+<!-- ─── STICKY CTA ─── -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#contact" class="btn btn-primary btn-sm">Get Quote ↗</a>
+</div>
+
+<!-- ─── BACK TO TOP ─── -->
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
