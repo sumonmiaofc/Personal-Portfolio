@@ -3,9 +3,9 @@
    Replace EMAILJS_SVC, EMAILJS_TPL, EMAILJS_KEY below
    ============================================================ */
 
-var EMAILJS_SVC = 'service_xxxxxxx';
-var EMAILJS_TPL = 'template_xxxxxxx';
-var EMAILJS_KEY = 'YOUR_PUBLIC_KEY';
+var EMAILJS_SVC = 'service_20k2amt';
+var EMAILJS_TPL = 'template_6597yyz';
+var EMAILJS_KEY = '30vU_S6c6c0gHx4lP';
 
 /* ── URL MAPS ── */
 var URL_MAP = {
