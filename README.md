@@ -215,7 +215,7 @@ In `index.html`, search for `$400` and `$800` to update prices.
 - 📧 [sumonmiaofc@gmail.com](mailto:sumonmiaofc@gmail.com)
 - 💼 [behance.net/sumonmiaofc](https://www.behance.net/sumonmiaofc)
 - 🔗 [linkedin.com/in/sumonmiaofc](https://www.linkedin.com/in/sumonmiaofc/)
-- 📱 WhatsApp: [+880 1823-259348](https://wa.me/8801823259348)
+- 📱 WhatsApp: [+880 1560-048854](https://wa.me/8801560048854)
 
 ---
 
